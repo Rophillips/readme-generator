@@ -8,6 +8,26 @@ const questions = [];
 inquirer.prompt([
     {           
     type: 'input',
+    message: 'What is the title of your project?',
+    name: 'projectTitle',
+    },
+    {                     
+    type: 'input',
+    message: 'What is the description of your project?',
+    name: 'projectDescription',
+    },
+    {           
+    type: 'input',
+    message: 'What command should be run to install dependencies?',
+    name: 'projectInstall',
+    },
+    {           
+    type: 'input',
+    message: 'What is the usage information?',
+    name: 'usageInfo',
+    },
+    {           
+    type: 'input',
     message: 'What is your github name?',
     name: 'username',
     }
