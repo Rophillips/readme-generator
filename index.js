@@ -28,8 +28,18 @@ inquirer.prompt([
     },
     {           
     type: 'input',
-    message: 'What is your github name?',
-    name: 'username',
+    message: 'What were the contributing guidelines?',
+    name: 'contribInfo',
+    },
+    {
+    type: 'input',
+    message: 'What tests were used?',
+    name: 'testInfo',
+    },
+    {
+    type: 'input',
+    message: 'What is an appropriate license for this project?',
+    name: 'projectLicense',
     }
 ])
 
