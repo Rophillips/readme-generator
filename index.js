@@ -4,6 +4,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const questions = [];
+const generateMarkdown = required('./generateMarkdown')
 
 inquirer.prompt([
     {           
