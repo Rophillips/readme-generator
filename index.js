@@ -36,7 +36,7 @@ inquirer.prompt([
     {
     type: 'input',
     message: 'What tests were used?',
-    name: 'projectTest',
+    name: 'projectTests',
     },
     {
     type: 'list',
@@ -48,7 +48,7 @@ inquirer.prompt([
  .then((response) => {
     console.log(response)
     // TODO: Create a function to write README file
-     fs.writeFile("./test/README.md", `${generateMarkdown(response)}` , err => {
+     fs.writeFile("./test/README.md", `${generateMarkdown(response)}`, err => {
          if (err) console.error(err);
          console.log("README successful!")
      });
@@ -58,7 +58,7 @@ inquirer.prompt([
 //function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+//function init() {}
 
 // Function call to initialize app
-init();
+//init();
