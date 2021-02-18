@@ -39,15 +39,16 @@ inquirer.prompt([
     name: 'projectTest',
     },
     {
-    type: 'input',
-    message: 'What is an appropriate license for this project?',
+    type: 'list',
+    message: 'What license do you want to use for this project?',
+    choices: ['MIT', 'mozilla', 'ISC', 'GNU', 'nolicense'],
     name: 'projectLicense',
     }
  ])
  .then((response) => {
     console.log(response)
     // TODO: Create a function to write README file
-     fs.writeFile("README.md", `${generateMarkdown(response)}` , err => {
+     fs.writeFile("./test/README.md", `${generateMarkdown(response)}` , err => {
          if (err) console.error(err);
          console.log("README successful!")
      });
