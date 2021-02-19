@@ -1,10 +1,10 @@
- # Title
+# Title
 
-  y
+  readme
   
 ## Description
 
-  y
+  readme
 
 ## Table of Contents
 
@@ -15,19 +15,19 @@
   
 ## Installation
 
-  y
+  yes
 
 ## Usage
 
-  y
+  usage
 
 ## Credits
 
-  y
+  yes
 
 ## Tests
 
-  y
+  npm
 
 ## License
 
