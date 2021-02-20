@@ -30,8 +30,8 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        message: 'What is the usage information?',
-        name: 'projectUsage',
+        message: 'What is your GitHub user name?',
+        name: 'projectGitHub',
     },
     {
         type: 'input',
@@ -60,10 +60,7 @@ inquirer.prompt([
     });
 
 
-//function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-//function init() {}
 
 // Function call to initialize app
 //init();

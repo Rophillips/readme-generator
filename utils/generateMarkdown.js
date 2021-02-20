@@ -63,7 +63,7 @@ function generateMarkdown(response) {
 ## Table of Contents
 
 * [Installation](#installation)
-* [Usage](#usage)
+* [GitHub](#github)
 * [Credits](#credits)
 * [License](#license)
 * [Description](#description)
@@ -72,16 +72,15 @@ function generateMarkdown(response) {
 
 ## Questions
 
-For any questions, just email me at; ${response.projectEmail}
+ For any questions, just email me at; ${response.projectEmail}
 
-  
 ## Installation
 
   ${response.projectInstall}
 
-## Usage
+## Github
 
-  ${response.projectUsage}
+ You can also visit my [Github page](https://github.com/rophillips/${response.projectGitHub})
 
 ## Credits
 
