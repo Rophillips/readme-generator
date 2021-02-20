@@ -1,10 +1,10 @@
 # Title
 
-  readme
+  y
   
 ## Description
 
-  readme
+  y
 
 ## Table of Contents
 
@@ -12,23 +12,26 @@
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+* [Description](#description)
+* [Contributions](#contributions)
   
 ## Installation
 
-  yes
+  y
 
 ## Usage
 
-  usage
+  y
 
 ## Credits
 
-  yes
+  y
 
 ## Tests
 
-  npm
+  y
 
 ## License
 
   MIT
+  

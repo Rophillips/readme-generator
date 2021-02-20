@@ -41,7 +41,7 @@ inquirer.prompt([
     {
     type: 'list',
     message: 'What license do you want to use for this project?',
-    choices: ['MIT', 'mozilla', 'ISC', 'GNU', 'nolicense'],
+    choices: ['MIT', 'mozilla', 'GNU', 'nolicense'],
     name: 'projectLicense',
     }
  ])
