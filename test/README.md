@@ -1,6 +1,6 @@
 # Title
 
-  ReadMe generator
+  ReadMe Generator
   
 ## Description
 
@@ -22,7 +22,7 @@
 
 ## Installation
 
-  npm i plus the name (such as inquirer)
+  npm i plus the name (i.e. inquirer)
 
 ## Github
 
@@ -43,3 +43,5 @@
   License
 ![badge](https://shields.io/badge/license-MIT-brightgreen)
 *[License link] https://choosealicense.com/licenses/mit/
+
+  
