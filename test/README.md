@@ -14,6 +14,12 @@
 * [License](#license)
 * [Description](#description)
 * [Contributions](#contributions)
+* [Questions](#questions)
+
+## Questions
+
+For any questions, just email me at; y
+
   
 ## Installation
 
@@ -33,5 +39,10 @@
 
 ## License
 
-  MIT
+  GNU
+
+  License
+![badge](https://shields.io/badge/license-GNU-brightgreen)
+*[License link] https://choosealicense.com/licenses/gpl-3.0/
+
   

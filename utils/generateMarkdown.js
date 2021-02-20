@@ -2,25 +2,52 @@
 // If there is no license, return an empty string
  function renderLicenseBadge(projectLicense) {
    if(projectLicense) {
-     return `![https://choosealicense.com](https://shields.io/badge/license-${response.projectLicense}-brightgreen)`;
+     return `![badge](https://shields.io/badge/license-${projectLicense}-brightgreen)`;
     
-     }else {
-     return "";
+    } 
+   if (projectLicense) {
+     return `![badge](https://shields.io/badge/license-${projectLicense}-brightgreen)`;
+    }
+   if (projectLicense) {
+     return `![badge](https://shields.io/badge/license-${projectLicense}-blue)`;
+     }
+    else {
+      return "";
+    }
+    
    }
- }
+ 
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(projectLicense) {
    if (projectLicense === "MIT"){
-     return `[Link to License] https://choosealicense.com/licenses/mit/`;
-   } else {
-     return "";
+     return `[License link] https://choosealicense.com/licenses/mit/`;
+
+   } else if (projectLicense === "mozilla") {
+     return `[License link] https://choosealicense.com/licenses/mpl-2.0/`;
+   
+   } else if (projectLicense === "GNU") {
+     return `[License link] https://choosealicense.com/licenses/gpl-3.0/`;
+
+   } else if (projectLicense === "no license") {
+    return "";
+   }
+     
   }
- }
+ 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(projectLicense) {}
+function renderLicenseSection(projectLicense) {
+  if (projectLicense === "MIT" || projectLicense === "mozilla" || projectLicense === "GNU"){
+    return `License
+${renderLicenseBadge(projectLicense)}
+*${renderLicenseLink(projectLicense)}`;
+
+  }else {
+    return "";
+  }
+}
 
 
 // TODO: Create a function to generate markdown for README
@@ -41,6 +68,12 @@ function generateMarkdown(response) {
 * [License](#license)
 * [Description](#description)
 * [Contributions](#contributions)
+* [Questions](#questions)
+
+## Questions
+
+For any questions, just email me at; ${response.projectEmail}
+
   
 ## Installation
 
@@ -61,8 +94,12 @@ function generateMarkdown(response) {
 ## License
 
   ${response.projectLicense}
+
+  ${renderLicenseSection(response.projectLicense)}
+
   
 `;
+
 }
 
 module.exports = generateMarkdown;
